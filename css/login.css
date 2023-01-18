@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --blue: #166eef;
+    --soft-blue: #73bbf4;
+    --lemon-green: #98fc28;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    font-size: 1.6rem;
+}
+header nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #166eef;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.459);
+
+}
+header nav img{
+    width: 100px;
+    height: auto;
+    margin: 1em;
+    margin-left: 4em;
+}
+h1 {
+    font-weight: 700;
+    margin-bottom: 0;
+    margin-top: 150px;
+    text-align: center;
+}
+p {
+    font-size: 18px;
+    color: var(--blue);
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 10px;
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.box{
+    flex-basis: 1rem;
+    flex-grow: 1;
+}
+.imageCleaner{
+    height: 70vh;
+    width: 10vh;
+    margin-left: 60px;
+    margin-right: 60px;
+    justify-content: flex-start;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.459);
+}
+.FormCleaner{
+    height: 85vh;
+    width: 50vh;
+    justify-content: center;
+}
+form .group{
+    margin-left: 0px;
+    margin-right: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    height: 40px;
+    background-color: none;
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 30px;
+    flex-basis: 1rem;
+    flex-grow: 1;
+    border: 1px solid var(--lemon-green);
+    border-radius: 25px;
+    font-style: italic;
+}
+input:focus {
+    outline-color: var(--soft-blue);
+}
+
+button  {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    background: var(--soft-blue);
+    border: none;
+    border-radius: 25px;
+    margin: 30px;
+    height: 40px;
+    width: 30%;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--lemon-green);
+  }
+
+@media(max-width:800px){
+    header nav img{
+        margin-left: 3.5em;
+    }
+    h1{
+        margin-top: 60px;
+    }
+}
+
+@media(max-width:600px){
+    header nav img{
+        margin-left: 2em;
+    }
+    h1{
+        margin-top: 70px;
+    }
+    .imageCleaner{
+        height: 50vh;
+        margin-left: 20px;
+        margin-right: 20px;
+        
+    }
+    form .group{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media(max-width:500px){
+    header nav img{
+        margin-left: 1em;
+    }
+    .imageCleaner{
+        display: none;
+    }
+    h1{
+        margin-top: 80px;
+    }
+}
